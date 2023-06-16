@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using static ChipSecuritySystem.Tree;
 
 namespace ChipSecuritySystem
@@ -15,6 +16,7 @@ namespace ChipSecuritySystem
             ColorChip[] chips = { chip1, chip2, chip3, chip4};
             Link link = new Link();
             bool canLink = link.canLinkBasic(chips);
+            Thread.Sleep(5000);
 
             //ColorChip advancedChip1 = new ColorChip(Color.Blue, Color.Yellow);
             //ColorChip advancedChip2 = new ColorChip(Color.Orange, Color.Green);
